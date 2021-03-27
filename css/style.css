@@ -1,0 +1,83 @@
+body {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-box {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: "header header header sidebar" "content content content sidebar" "content content content sidebar" "footer footer footer footer";
+}
+
+@media screen and (min-width: 1000px) {
+    .grid-box {
+        grid-template-areas: "header header header header" "content content content content" "sidebar sidebar sidebar sidebar" "footer footer footer footer";
+    }
+}
+
+
+/* .box-1 {
+    background-color: red;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-2 {
+    background-color: black;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.box-3 {
+    background-color: blue;
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.box-4 {
+    background-color: green;
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+} */
+
+.box-1 {
+    background-color: red;
+    color: white;
+    grid-area: header;
+}
+
+.box-2 {
+    background-color: black;
+    color: white;
+    grid-area: content;
+}
+
+.box-3 {
+    background-color: blue;
+    color: white;
+    grid-area: footer;
+}
+
+.box-4 {
+    background-color: green;
+    color: white;
+    grid-area: sidebar;
+}
