@@ -3,55 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
     <title>Project One</title>
 </head>
 
 <body>
 
-    <h1>Schreinerei Meier, ihre Werkstatt für gutes Wohnen</h1>
-    <nav>
-        <ul>
-            <li><a tabindex="0" aria-current="page">Startseite</a></li>
-            <li><a href="preise.html">Unsere Preise</a></li>
-            <li><a href="bilder.html">Bilder von unseren Produkten</a></li>
-            <li><a href="kontakt.html">Kontakt und Impressum</a></li>
-        </ul>
-    </nav>
+    <header class="bgimg-1">
+        <div class="main-header sticky grid-box">
+            <a id="logo" href="#"><img id="main-logo" src="res/logo.png" alt="logo"></a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Laufszene</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Ausrüstung</a></li>
+                    <li><a href="#">Gesundheit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="caption">
+            <span class="border">runners blog</span><br>
+            <span class="border">Alles zum Thema Laufen</span>
+        </div>
+    </header>
 
-    <p>Willkommen bei der Schreinerei Meier im Internet!</p>
+    <article class="grid-box-article">
+        <img class="article-img" src="res/ich.jpg" alt="foto von chrstian koller">
+        <!-- <p class="article-img">Lorem ipsum dolor sit amet.</p> -->
+        <p class="article-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolores eveniet natus officiis cum praesentium odit adipisci vero pariatur quis odio sapiente a esse eum architecto velit magnam quas repudiandae saepe quam voluptatibus nemo error
+            porro. Quas minus quasi deleniti aspernatur neque enim dolorem accusamus dolorum consequatur dolor ducimus itaque explicabo fuga nihil, quisquam impedit eius. Mollitia neque nam corrupti.</p>
+    </article>
 
-    <p>Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenwünsche zu erfüllen. In unserer Werkstatt produzieren wir selbst - mit Holz aus regionaler, nachaltiger Forstwirtschaft. </p>
+    <article>
+        <h1 class="heading-1 text-center">Laufblog</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto minima quis qui velit cumque quae, iure est quasi nesciunt?</p>
+    </article>
 
-
-    <h2>Unsere Leistungen:</h2>
-
-    <ul>
-        <li>Möbel nach Ihren Wünschen
-            <ul>
-                <li>Küchenmöbel</li>
-                <li>Regale und Schrankwände</li>
-                <li>Badezimmermöbel</li>
-            </ul>
-        </li>
-        <li>Haustüren</li>
-        <li>Gartenzäune</li>
-        <li>Reparaturen</li>
-
-    </ul>
-
-
-    <h2>Unsere Geschichte: </h2>
-
-    <p>
-        Die Anfänge unserer Firma reichen bis ins Mittelalter zurück, als Horst Holzmann begann seine bisher für den Eigenbedarf hergestellten Möbel auch auf dem Markt der nächsten Stadt zu verkaufen.
-    </p>
-
-    <p>
-        Sein Sohn führte diese Tradition fort und nach ihm noch viele weitere Kinder und Kindeskinder. Heute führt Harry Holzmann den Betrieb in der 15. Generation und arbeitet bereits seinen Enkel als Nachfolger ein.
-    </p>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div><img src="res/thumbnail.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
